@@ -1,0 +1,234 @@
+EESchema Schematic File Version 2  date 25/02/13 17:51:02
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MedidorConductividadSuelo-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "25 feb 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6950 2600 7650 2600
+Wire Wire Line
+	6450 2600 5150 2600
+Wire Notes Line
+	8400 3750 8400 5450
+Wire Notes Line
+	2350 3950 3800 3950
+Wire Notes Line
+	3800 3900 3800 3850
+Wire Notes Line
+	3800 3800 3800 6000
+Wire Notes Line
+	3800 6000 2350 6000
+Wire Notes Line
+	4700 2400 2900 2400
+Wire Notes Line
+	2900 2400 2900 3900
+Wire Notes Line
+	2950 3900 2850 3900
+Wire Notes Line
+	2950 3900 2950 5200
+Wire Notes Line
+	2950 5200 2850 5200
+Wire Notes Line
+	2850 5200 2850 3900
+Connection ~ 5450 2600
+Wire Wire Line
+	5450 2800 5450 2600
+Wire Wire Line
+	5450 3300 5450 3400
+Wire Wire Line
+	7700 3800 7500 3800
+Wire Wire Line
+	7500 3800 7500 4400
+Wire Wire Line
+	7500 4400 7700 4400
+Wire Wire Line
+	7650 2100 5450 2100
+Wire Wire Line
+	5450 2100 5450 2400
+Wire Wire Line
+	5450 2400 5150 2400
+Wire Notes Line
+	3250 5200 3250 3900
+Wire Notes Line
+	3250 5200 3350 5200
+Wire Notes Line
+	3350 5200 3350 3900
+Wire Notes Line
+	3350 3900 3250 3900
+Wire Notes Line
+	3300 3900 3300 2600
+Wire Notes Line
+	3300 2600 4700 2600
+Wire Notes Line
+	2350 6000 2350 3800
+Wire Wire Line
+	7650 4900 7500 4900
+Wire Wire Line
+	7500 4900 7500 5400
+Wire Wire Line
+	7500 5400 7700 5400
+Wire Wire Line
+	5450 3400 7700 3400
+Wire Wire Line
+	6000 3000 7650 3000
+$Comp
+L CONNECTOR P_GND
+U 1 1 512B9561
+P 7650 3000
+F 0 "P_GND" H 8000 3100 70  0000 C CNN
+F 1 "GND" H 8000 2900 70  0000 C CNN
+	1    7650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPAPOL C1
+U 1 1 512B94B5
+P 6000 2800
+F 0 "C1" H 6050 2900 50  0000 L CNN
+F 1 "100u" H 6050 2700 50  0000 L CNN
+	1    6000 2800
+	1    0    0    -1  
+$EndComp
+Text Notes 1950 6650 0    60   ~ 0
+LA MISMA REGANDO UN POCO AL CABO DE 2 MINUTOS DA ENTRE 1460 Y 1480 uS/cm
+Text Notes 1950 6450 0    60   ~ 0
+PARA MACETA CON TIERRA ESPONJOSA Y BASTANTE SECA 530 A 540 uS/cm
+Text Notes 1950 6250 0    60   ~ 0
+LECTURA PARA AGUA DEL GRIFO ENTRE 1995 y 2007 uS/cm
+$Comp
+L CONNECTOR DIGITAL-8
+U 1 1 51210CB1
+P 7700 5400
+F 0 "DIGITAL-8" H 8050 5500 70  0000 C CNN
+F 1 "(8)" H 8050 5300 70  0000 C CNN
+	1    7700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONNECTOR (3)
+U 1 1 51210CA4
+P 7700 4900
+F 0 "(3)" H 8050 5000 70  0000 C CNN
+F 1 "E_displayAD" H 8050 4800 70  0000 C CNN
+	1    7700 4900
+	1    0    0    -1  
+$EndComp
+Text Notes 3900 4350 0    60   ~ 0
+PRUEBAS HECHAS CON
+Text Notes 3900 4500 0    60   ~ 0
+DOS VARILLAS DE INOXIDABLE DE 7.7x0.5cm SEPARADAS 1.2cm
+Text Label 8450 4700 0    60   ~ 0
+EN EL SHIELD-DFR0019
+$Comp
+L CONNECTOR (13)
+U 1 1 511F9593
+P 7700 4400
+F 0 "(13)" H 8050 4500 70  0000 C CNN
+F 1 "DIGITAL-13" H 8050 4300 70  0000 C CNN
+	1    7700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONNECTOR AD0
+U 1 1 511F93D3
+P 7650 2600
+F 0 "AD0" H 8000 2700 70  0000 C CNN
+F 1 "E_sensor" H 8000 2500 70  0000 C CNN
+	1    7650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 511F93B6
+P 4800 2500
+F 0 "P1" V 4750 2500 40  0000 C CNN
+F 1 "AL SENSOR" V 5000 2500 40  0000 C CNN
+	1    4800 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONNECTOR (DIGITAL-3)
+U 1 1 511F936C
+P 7650 2100
+F 0 "(DIGITAL-3)" H 8000 2200 70  0000 C CNN
+F 1 "S_electrodo" H 8000 2000 70  0000 C CNN
+	1    7650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONNECTOR (1)
+U 1 1 511F9360
+P 7700 3800
+F 0 "(1)" H 8050 3900 70  0000 C CNN
+F 1 "S_led" H 8050 3700 70  0000 C CNN
+	1    7700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONNECTOR (DIGITAL-5)
+U 1 1 511F9355
+P 7700 3400
+F 0 "(DIGITAL-5)" H 8050 3500 70  0000 C CNN
+F 1 "S_resistenciaRetorno" H 8050 3300 70  0000 C CNN
+	1    7700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 511F92DA
+P 5450 3050
+F 0 "R1" V 5530 3050 50  0000 C CNN
+F 1 "2K2" V 5450 3050 50  0000 C CNN
+	1    5450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 511F92BC
+P 6700 2600
+F 0 "R2" V 6780 2600 50  0000 C CNN
+F 1 "10K" V 6700 2600 50  0000 C CNN
+	1    6700 2600
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
